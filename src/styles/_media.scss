@@ -230,7 +230,7 @@
     height: 400px;
   }
   // .topnav{
-  //   margin-right: -300px;
+  //   margin-right: 300px;
   // }
   #menu__toggle {
     opacity: 0;
@@ -258,7 +258,7 @@
     align-items: center;
     position: absolute;
     top: 20px;
-    left:88%;
+    left: 88%;
 
     width: 36px;
     height: 26px;
@@ -294,23 +294,18 @@
   }
 
 
-
   
   .menu__box {
-   
     position: absolute;
     visibility: hidden;
-
+    margin-right: 530px;
     width: 180px;
     height: 230px;
-   right: -62%;
-    // margin: 0;
-    // padding: 0px 0;
-    // margin-right: -415px;
+    right: -476px;
+/*     right: -62%; */
     list-style: none;
     background-color: #f5f5f5;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-
     transition-duration: 0.25s;
   }
 
@@ -326,19 +321,13 @@
   }
 
   .topnav a {
+    font-size: 13px;
     text-align: left;
   }
-
-  .menu__item:hover {
-    background: #e5e5e5;
-  }
-
   // .topnav {
   //   margin-left: 529px;
   // }
-  .topnav a {
-    font-size: 13px;
-  }
+  
   .title-post {
     font-size: 15px;
     margin-left: 60px;
@@ -427,7 +416,7 @@
     width: 630px;
     height: 390px;
   }
-  .topnav{
+  .topnav {
     right: -64%;
   }
   .topnav a {
@@ -522,7 +511,7 @@
     height: 380px;
     margin-top: 40px;
   }
-  .topnav{
+  .topnav {
     right: -45%;
   }
   .title-post {
@@ -614,7 +603,7 @@
     height: 360px;
     margin-top: 40px;
   }
-  .topnav{
+  .topnav {
     right: -45%;
   }
   .title-post {
@@ -706,7 +695,7 @@
     height: 320px;
     margin-top: 40px;
   }
-  .topnav{
+  .topnav {
     right: -58%;
   }
   .title-post {
@@ -798,7 +787,7 @@
     height: 290px;
     margin-top: 40px;
   }
-  .topnav{
+  .topnav {
     right: -50%;
   }
   .title-post {
@@ -891,7 +880,7 @@
     height: 260px;
     margin-top: 40px;
   }
-  .topnav{
+  .topnav {
     right: -45%;
   }
   .title-post {
@@ -1019,7 +1008,7 @@
     font-size: 12px;
     margin-top: -25px;
   }
-  .topnav{
+  .topnav {
     right: -44%;
   }
   .post1 {
@@ -1090,15 +1079,19 @@
 }
 
 @media (max-width: 320px) {
+   
   .image-rails {
     width: 270px;
     height: 170px;
     margin-top: 40px;
     margin-bottom: -15px;
   }
-  .topnav{
-    right: -30%;
-  }
+  // .topnav {
+    
+  //   right: -30%;
+  // }
+
+
 
   .title-post {
     font-size: 14px;
@@ -1113,9 +1106,9 @@
     grid-column-gap: 0px;
     grid-row-gap: 10px;
   }
-  .menu__btn {
-   left:81%;
-  }
+  // .menu__btn {
+  //   left: 81%;
+  // }
   .p-posts3 {
     display: none;
   }
@@ -1165,6 +1158,7 @@
     width: 260px;
   }
 
+
   .del-photo2 {
     display: none;
   }
@@ -1203,5 +1197,98 @@
     line-height: 14px;
     width: 250px;
     margin-bottom: -24px;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+  .menu__btn {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 81%;
+
+    width: 36px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    margin-left: 8px;
+    // width: 100%;
+    width: 20px;
+    height: 2px;
+    background-color: #ffffff;
+
+    transition-duration: 0.25s;
+  }
+  .menu__btn > span::before {
+    content: "";
+    // margin-top: 2px;
+    margin-left: 0px;
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    margin-left: 0px;
+    // margin-top: -2px;
+    top: 8px;
+  }
+
+
+  
+  .menu__box {
+    position: absolute;
+    visibility: hidden;
+    margin-right: 530px;
+    width: 180px;
+    height: 230px;
+    right: -506px;
+/*     right: -62%; */
+    list-style: none;
+    background-color: #f5f5f5;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.25s;
+  }
+
+  .menu__item {
+    display: block;
+    width: 180px;
+    color: rgb(255, 255, 255);
+    margin-bottom: -14px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+
+  .topnav a {
+    font-size: 13px;
+    text-align: left;
   }
 }
