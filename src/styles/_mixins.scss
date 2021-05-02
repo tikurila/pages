@@ -1,0 +1,11 @@
+@mixin containerWidth($maxDeviceWidth, $maxContainerWidth) {
+   @media (max-width: $maxDeviceWidth) {
+      max-width: $maxContainerWidth;
+   }
+}
+
+%list-reset {
+   margin: 0;
+   padding-left: 0;
+   list-style: none;
+}

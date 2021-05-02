@@ -1,0 +1,1 @@
+const user=null;function blabla(l){console.log("Bla bla bla")}

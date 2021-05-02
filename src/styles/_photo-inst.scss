@@ -1,0 +1,47 @@
+.photo-inst {
+  margin-bottom: -500px;
+  background: #e7e5e5;
+}
+.grid-inst {
+  padding-bottom: 50px;
+  margin-left: 90px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+}
+
+.text-dawn {
+  padding-top: 60px;
+}
+
+.text-inst-right {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  color: #4E4E4E;
+  margin-top: -35px;
+  margin-left: 1030px;
+}
+
+.inst1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.inst2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.inst3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.inst4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.img-inst {
+  height: 280px;
+  width: 280px;
+}
